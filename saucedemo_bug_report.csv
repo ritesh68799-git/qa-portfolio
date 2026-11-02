@@ -1,0 +1,14 @@
+Bug ID,Title,Category,Severity,Module / Screen,Steps to Reproduce,Expected Behavior,Actual Behavior,Evidence,Browser + OS,Viewport,Reproducibility,Date Found,Notes
+S-01,All six products show the same dog photo for problem_user,UI - Content,P2,Products page,"1. Open saucedemo.com.
+2. Log in as problem_user with the password shown on the login page.
+3. Look at the product images on the Products page.
+4. Log in as standard_user in another tab and compare.","Each product shows its own image, as it does for standard_user.",All six products show the same photo of a dog.,S01_problem_user_inventory.png / S01_standard_user_inventory.png,Chrome (latest) / Windows,1280x960,Always,2026-11-02,Practice site with seeded issues. Product detail pages were not checked for problem_user.
+S-02,Checkout accepts a one-letter postal code ('o') and completes the order,Functional - Validation,P3,Checkout: Your Information,"1. Log in as standard_user.
+2. Add Backpack, Bike Light and Bolt T-Shirt to the cart.
+3. Open the cart and click Checkout.
+4. Enter First Name 'a', Last Name 'a', Zip/Postal Code 'o'.
+5. Click Continue, then Finish.","The postal code is checked for a valid format and length, and the user cannot continue with 'o'.",No error is shown. The Overview page opens and the order completes with 'Thank you for your order!'.,S02_checkout_invalid_input.png / S02_checkout_overview.png / S02_checkout_complete.png,Chrome (latest) / Windows,1280x960,Always,2026-11-02,"The field is labelled Zip/Postal Code and postal codes can contain letters in some countries, so the expected result is a format and length check, not digits only. A single letter is not valid anywhere. One-letter first and last names are also accepted, which looks doubtful but may be intended."
+S-03,Error state stays on filled fields and after the user corrects them,UI - UX,P4,Checkout: Your Information,"1. Log in as standard_user, add an item and open Checkout.
+2. Type 'b' in First Name only and click Continue.
+3. Look at the three fields and the red banner.
+4. Type 'b' in Last Name and Zip/Postal Code without clicking Continue.",Only the field with the problem is marked red. The error clears once the user fixes it.,"The First Name field, which is filled, also gets a red outline and icon. The banner says only 'Last Name is required'. After step 4 the red outlines and the banner stay until Continue is clicked again.",S03_error_on_filled_fields.png / S03_error_stays_after_fix.png,Chrome (latest) / Windows,1280x960,Always,2026-11-02,"Only one missing field is reported at a time, which is a separate small point."
