@@ -39,5 +39,5 @@ What I did in that exercise:
 | P3 | Minor: small visual issue or an uncommon path |
 | P4 | Trivial: cosmetic, typo, 1px spacing |
 
-## Next
-I am adding bug reports on public practice sites so that the evidence can be shared openly.
+## Practice site report
+[`saucedemo_bug_report.csv`](saucedemo_bug_report.csv) has three bugs I found on saucedemo.com, a public practice site. The screenshots (`S01_` to `S03_`) are in this repo.
