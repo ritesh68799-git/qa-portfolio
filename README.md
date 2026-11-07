@@ -21,10 +21,10 @@ Each bug has the same fields, so a developer can follow it without asking me any
 
 The empty template is in [`bug_report_template.md`](bug_report_template.md).
 
-## Sample from a take-home exercise
-I did a take-home QA exercise where I compared a web app clone with the original product, side by side in Chrome at 1280x960, and logged 19 bugs. The company and the app are private, so I do not share its links, screenshots or login details. [`sample_bug_tracker.csv`](sample_bug_tracker.csv) has five of the bug types I found, rewritten in general terms.
+## Samples from two hiring exercises
+I did a take-home QA exercise where I compared a web app clone with the original product, side by side in Chrome at 1280x960, and logged 19 bugs. In a second hiring exercise I tested a live consumer app and wrote up four issues. The companies and apps are private, so I do not share their links, screenshots or login details. [`sample_bug_tracker.csv`](sample_bug_tracker.csv) has seven of the bug types I found across the two, rewritten in general terms.
 
-What I did in that exercise:
+What I did in the first exercise:
 - Opened the original and the clone side by side and went through the same flow in both
 - Checked form validation, navigation, buttons, counters and layout
 - Marked each difference with a severity and a screenshot
