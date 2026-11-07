@@ -40,4 +40,4 @@ What I did in that exercise:
 | P4 | Trivial: cosmetic, typo, 1px spacing |
 
 ## Practice site report
-[`saucedemo_bug_report.csv`](saucedemo_bug_report.csv) has three bugs I found on saucedemo.com, a public practice site. The screenshots (`S01_` to `S03_`) are in this repo.
+[`saucedemo_bug_report.csv`](saucedemo_bug_report.csv) has seven bugs I found on saucedemo.com, a public practice site. The screenshots (`S01_` to `S07_`) and two short screen recordings are in this repo.
