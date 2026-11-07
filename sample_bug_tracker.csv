@@ -4,3 +4,10 @@ S-02,No confirmation message after sending a document,Functional - Flow,P2,Send 
 S-03,Placed field cannot be dragged to a new position,Functional - Interaction,P2,Document editor,1. Click a field type to place it. 2. Press and hold the field. 3. Drag it elsewhere.,The field moves with the mouse.,The field stays where it was placed.,Always,The original lets the user move fields freely.
 S-04,Two dashboard counters always show the same number,Data,P2,Home > Overview,1. Open Home. 2. Compare 'Waiting' and 'Expiring' on different days.,The counters differ and match the lists they link to.,Both show the same value every time.,Always,Looks like a static or wrongly derived value.
 S-05,Dashboard tiles do nothing when clicked,Functional - Navigation,P2,Home > Overview,1. Open Home. 2. Click each tile.,Each tile opens a filtered list.,Nothing happens.,Always,The original opens the filtered list.
+S-06,Points balance goes up on every click anywhere on a page,Functional - Logic,P1,Rewards page,"1. Open the rewards page and note the points balance.
+2. Click on empty space, plain text and the background, not on any reward button.
+3. Check the balance after each click.",Points change only when a reward action is completed.,"The balance goes up by 1 for every click, wherever the click lands.",Always,Also seen on a second page of the same app. Suspected cause: a page-wide click handler that triggers the reward logic. I could not confirm this from the outside.
+S-07,Reward redemption fails after the OTP step and shows a raw technical error,Functional - Flow,P1,Redeem reward,"1. Open a reward that has been claimed and choose Redeem.
+2. Enter a mobile number and request an OTP.
+3. Enter the OTP received on the phone.
+4. Click Verify.",Verification succeeds and the reward is added to the user's collection with a success message.,An error screen says 'Something went wrong' with a configuration message. Redemption stops and the reward cannot be used.,Always (3 or more attempts),"The OTP arrived, so the failure is after verification. Suspected problem with a third-party provider setup; not confirmed. The message is also too technical for a normal user."
